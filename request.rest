@@ -1,0 +1,27 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsIm5hbWUiOiJKYWxza2kiLCJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTY5MDk0NzY4NiwiZXhwIjoxNjkwOTQ3NzAxfQ.m4cxyx1AcJNyD1yvTRKSmVkWCdxaixSNC7YiZAlvGKY
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Jalski",
+    "email": "email@gmail.com",
+    "password": "100402",
+    "confPassword": "100402"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "email@gmail.com",
+    "password": "100402"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
